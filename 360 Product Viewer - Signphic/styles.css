@@ -1,0 +1,129 @@
+html{
+  margin-top: 150px;
+  background-color: #08b0d5;
+}
+img{
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+    align-items:center;
+  }
+  
+  
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width:400px;
+    border-radius: 5px; 
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+  }
+  .content {
+    display:block;
+    justify-content:center;
+    width:200px;
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    justify-content:center;
+  }
+  input[type="range"]{
+     width:100%;
+  }
+  .rangeinput {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d1cfcf;
+    outline: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .low.rangeinput{
+    background: #f5c8c8;
+  }
+  .high.rangeinput{
+    background: #b6d2b9;
+  }
+  
+  .rangeinput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e3447c;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+  
+  
+  /* .range-slider::-webkit-slider-thumb:hover,
+  .range-slider:active::-webkit-slider-thumb {
+    background: #1abc9c;
+  } */
+  
+  .rangeinput::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out;
+  }
+  
+  /* .range-slider::-moz-range-thumb:hover,
+  .range-slider:active::-moz-range-thumb {
+    background: #1abc9c;
+  } */
+  
+  
+  .range-slider::-webkit-slider-thumb:hover,
+  .range-slider:active::-webkit-slider-thumb {
+    background: #03A9F4;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .rangeinput::-moz-range-thumb:hover,
+  .rangeinput:active::-moz-range-thumb {
+    background: #03A9F4;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .low::-webkit-slider-thumb:hover,
+  .low:active::-webkit-slider-thumb {
+    background: red;
+  }
+  
+  .high::-webkit-slider-thumb:hover,
+  .high:active::-webkit-slider-thumb {
+    background: #1abc9c;
+  }
+  
+  ::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+  }
+  
+  input::-moz-focus-inner,
+  input::-moz-focus-outer {
+    border: 0;
+  }
+  
