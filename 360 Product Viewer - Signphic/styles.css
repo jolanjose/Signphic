@@ -1,6 +1,6 @@
 html{
   margin-top: 150px;
-  background-color: #08b0d5;
+  background-color: #28282B;
 }
 img{
     max-width: 100%;
@@ -64,7 +64,7 @@ img{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e3447c;
+    background: #28282B;
     cursor: pointer;
     -webkit-transition: background .15s ease-in-out;
     transition: background .15s ease-in-out;
