@@ -1,0 +1,113 @@
+body{
+    background-color: #fbb424;
+}
+.loader {
+    --animation: 2s infinite alternate cubic-bezier(0,1,.92,.99);
+    --animation-name1: loader1;
+    --animation-name2: loader2;
+    --animation-name3: loader3;
+    
+    --size1: 90px;
+    --size2: 60px;
+    --size3: 30px;
+    
+    --color: #fff;
+    
+    --shadow-color: 0deg 0% 0%;
+    --shadow:
+      0.7px 0.7px 1.4px hsl(var(--shadow-color) / 0.02),
+      4.8px 4.8px 9.8px -0.2px hsl(var(--shadow-color) / 0.13),
+      14.6px 14.6px 29.9px -0.4px hsl(var(--shadow-color) / 0.23);
+    
+    position: relative;
+    height: var(--size1);
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+  
+  .loader__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--size1);
+    aspect-ratio: 1;
+    background-color: var(--color);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    animation: var(--animation);
+    animation-name: var(--animation-name1);
+  }
+  
+  .loader__item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--size2);
+    aspect-ratio: 1;
+    background-color: var(--color);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    animation: var(--animation);
+    animation-name: var(--animation-name2);
+  }
+  
+  .loader__item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--size3);
+    aspect-ratio: 1;
+    background-color: var(--color);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    animation: var(--animation);
+    animation-name: var(--animation-name3);
+  }
+  
+  @keyframes loader1 {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  @keyframes loader2 {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    
+    20% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  @keyframes loader3 {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    
+    40% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* outer decoration */
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
